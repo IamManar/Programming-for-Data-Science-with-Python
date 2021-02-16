@@ -224,7 +224,6 @@ def user_stats(df):
 def raw_input(df):
     i = 0
     raw = input('\nWould you like to display 5 rows of the data? Enter yes or no.\n').lower()
-    pd.set_option('display.max_columns',200)
     while True:            
         if raw == 'yes':
             print(df.iloc[i:i+5]) 
