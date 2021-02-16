@@ -204,18 +204,27 @@ def user_stats(df):
     user_type_count.plot.bar()
     plt.show()
 
-    # Display counts of gender
-    gender_count = df['Gender'].value_counts()
-    print('Count of Gender: ', gender_count)
+    # Display counts of Gender
+    if 'Gender' in df.columns:
+        gender_count = df['Gender'].value_counts()
+        print('Count of Gender: ', gender_count)
     # plot counts of gender
-    gender_count.plot.bar()
-    plt.show()
+        gender_count.plot.bar()
+        plt.show()
+    else : 
+            print('Gender Column is not availble')
+
 
     # Display earliest, most recent, and most common year of birth
-    earliest_year = df['Birth Year'].min()
-    recent_year = df['Birth Year'].max()
-    common_year = df['Birth Year'].value_counts().idxmax()
-    print('The Earlist Year: {} The Most Recent Year:  {} most common year of birth:  {} '.format(earliest_year,recent_year,common_year))
+    if 'Birth Year' in df.columns:
+        earliest_year = df['Birth Year'].min()
+        recent_year = df['Birth Year'].max()
+        common_year = df['Birth Year'].value_counts().idxmax()
+        print('The Earlist Year: {} The Most Recent Year:  {} most common year of birth:  {} '.format(earliest_year,recent_year,common_year))
+    else: 
+        print('Birth Year Column is not availble')
+    print("\nThis took %s seconds." % (time.time() - start_time))
+    print('-' * 40)
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-' * 40)
 
