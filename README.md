@@ -9,7 +9,7 @@
 ___ 
 ### Projects 
 ##### Investigate a Relational Database
-- Worked with a relational database with PostgreSQL. 
+- Worked with a relational database using PostgreSQL. 
 - Completed  the entire data analysis process, starting by posing a question, running appropriate SQL queries to answer business questions, and finishing by sharing my findings
 ##### Explore US Bikeshare Data
 - Wrote over 190 lines of Python code to import the data and answer interesting questions about it by computing descriptive statistics. 
