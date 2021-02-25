@@ -14,4 +14,6 @@ ___
 ##### Explore US Bikeshare Data
 - Wrote over 190 lines of Python code to import the data and answer interesting questions about it by computing descriptive statistics. 
 - wrote a script that takes in raw input to create an interactive experience in the terminal to present these statistics
-
+___ 
+### Credits
+[Udacity](https://www.udacity.com/)
